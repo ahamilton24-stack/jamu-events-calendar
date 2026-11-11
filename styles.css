@@ -1,0 +1,138 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6f3;
+    color: #333;
+}
+
+.calendar-header {
+    background-color: #0a2257;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.calendar-label {
+    color: #d6ad55;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.calendar-header h1 {
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.calendar-header p {
+    line-height: 1.6;
+}
+
+.calendar-container {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.month-section {
+    margin-bottom: 50px;
+}
+
+.month-section h2 {
+    color: #173f35;
+    font-size: 28px;
+    border-bottom: 3px solid #d6ad55;
+    padding-bottom: 10px;
+}
+
+.month-description {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.event-list {
+    display: grid;
+    gap: 16px;
+}
+
+.event-card {
+    display: flex;
+    align-items: stretch;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+}
+
+.event-date {
+    background-color: #173f35;
+    color: white;
+    min-width: 125px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.event-date strong {
+    color: #d6ad55;
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.event-details {
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+}
+
+.event-details h3 {
+    color: #0a2257;
+    font-size: 17px;
+    margin: 0;
+}
+
+.calendar-footer {
+    background-color: #0a2257;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .calendar-header h1 {
+        font-size: 29px;
+    }
+
+    .event-date {
+        min-width: 95px;
+        padding: 15px 8px;
+    }
+
+    .event-date strong {
+        font-size: 19px;
+    }
+
+    .event-details {
+        padding: 15px;
+    }
+
+    .event-details h3 {
+        font-size: 15px;
+    }
+}
